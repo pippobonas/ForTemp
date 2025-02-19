@@ -1,0 +1,8 @@
+- pipeline.id: ingestion_kafka
+  path.config: "/usr/share/logstash/pipeline/ingestion_kafka.conf"
+
+- pipeline.id: ingestion_elastick_current
+  path.config: "/usr/share/logstash/pipeline/ingestion_elastick_current.conf"
+
+- pipeline.id: ingestion_elastick_prediction_2t
+  path.config: "/usr/share/logstash/pipeline/ingestion_elastick_forecast_2t.conf"
