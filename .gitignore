@@ -1,0 +1,43 @@
+# Virtual environment
+**/venv
+
+# Compiled Python files
+*.pyc
+
+# env & conf
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.conf
+
+
+# Logs
+*.log
+
+
+# Dependency directories
+__pycache__/
+dist/
+build/
+
+# vscode
+.vscode/
+
+#DataSets
+*.grib
+*.nc
+*.nc4
+*.nc4.xml
+*.nc4.xml
+*.csv
+
+#key file
+**.conf
+
+#volume
+kafka-data/
+spark/checkpoint/
+spark/ivy2/
+spark/pipeline_model/
