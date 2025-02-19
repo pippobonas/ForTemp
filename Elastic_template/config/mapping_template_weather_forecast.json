@@ -1,0 +1,18 @@
+
+{
+    "index_patterns": ["weather-forecast*"],
+    "template": {
+      "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 1
+      },
+      "mappings": {
+        "properties": {
+          "location": { "type": "geo_point" },
+          "city": { "type": "keyword" },
+          "forecast-2t-1h": { "type": "float"},
+          "timestamp": { "type": "date" }
+        }
+      }
+    }
+  }

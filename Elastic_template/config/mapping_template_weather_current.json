@@ -1,0 +1,26 @@
+{
+  "index_patterns": ["weather-current*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "timestamp": { "type": "date" },
+        "city": { "type": "keyword" },
+        "location": { "type": "geo_point" },
+        "wind_speed": { "type": "float" },
+        "wind_deg": { "type": "float" },
+        "2t": { "type": "float" },
+        "msl": { "type": "float" },
+        "sp": { "type": "float" },
+        "q_level_1000": { "type": "float" },
+        "tcc": { "type": "float" },
+        "tp": { "type": "float" },
+        "ssrd": { "type": "float" }
+      }
+    }
+  }
+}
+  
